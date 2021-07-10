@@ -1,0 +1,162 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+}
+
+body,html{
+  background:linear-gradient( #192873  ,#472971, #192873  );
+
+}
+
+header{
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 1px 1px 3px 1px;
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 12px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1111;
+  background: #192873;
+}
+
+.logo{
+  font-size: 25px;
+  color: #0ACEEB;
+  text-decoration: none;
+  font-weight: bold;
+}
+.logo:hover{
+  color: #0ACEEB;
+}
+
+.informacoes{
+  text-decoration: none;
+  color: #0ACEEB;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+
+#areaPersonagens{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+
+#filtro{
+  background: #0ACEEB;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#filtro>optgroup{
+  background:#192889 ;
+  padding: 0px;
+  color: white;
+}
+.itens{
+  margin-bottom: 25px;
+}
+
+.itens img{
+  transform: scale(.9);
+  transition: all ease .2s;
+  border-radius: 12px;
+}
+
+.itens img:hover{
+  transform: scale(1);
+}
+
+.nameItem{
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+}
+#numPaginas{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding: 10px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  background: blue;
+
+}
+
+#numeroDePagina{
+  font-size: 25px;
+  background: transparent;
+  border: none;
+  color: whitesmoke;
+  width: 40px;
+  text-align: center;
+} 
+
+.viewPage{
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.rodape{
+  background:#192873 ;
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px 1px white;
+  width: 80%;
+  margin: 0px auto 50px auto;
+  padding: 10px;
+}
+.rodape button{
+  margin-right: 30px;
+}
+
+
+footer{
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: darkcyan;
+  font-weight: bold;
+}
+
+@media(max-width: 700px){
+  .logo{
+    font-size: 18px;
+    color: #0ACEEB;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .informacoes{
+    text-decoration: none;
+    color: #0ACEEB;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+}
