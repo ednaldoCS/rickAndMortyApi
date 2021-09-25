@@ -1,15 +1,21 @@
 let API_BASE='https://rickandmortyapi.com/api/character'
 
-let pegarDados=(url)=>{
+let pegarDados= async (url)=>{
     if (!url) {
       url=API_BASE
     }
 
+    
+    let request= await fetch(url)
+    console.log(request)
+    let resp= await request.json()
+    console.log(resp)
 
-    let xmlhttp=new XMLHttpRequest();
-    xmlhttp.open('get',url,false )
-    xmlhttp.send()
-    let resp= JSON.parse(xmlhttp.responseText)
+
+    // let xmlhttp=new XMLHttpRequest();
+    // xmlhttp.open('get',url,false )
+    // xmlhttp.send()
+    // let resp= JSON.parse(xmlhttp.responseText)
 
     //(resp.info.pages)
     document.getElementById('qtdPaginas').innerHTML=resp.info.pages
